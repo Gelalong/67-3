@@ -90,13 +90,14 @@ header {
 .hero-content {
   max-width: 800px;
   padding: 30px;
+  margin: 0 auto; /* Center content horizontally */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease;
-  white-space: nowrap; /* Prevents line break */
+  text-align: center; /* Ensure text is centered */
 }
 
 .hero p {
@@ -104,6 +105,17 @@ header {
   margin-bottom: 30px;
   animation: fadeInUp 1s ease 0.2s;
 }
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Reduce font size on smaller screens */
+  }
+  .hero p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
 
 @keyframes fadeInUp {
   from {
